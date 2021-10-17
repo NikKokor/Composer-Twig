@@ -1,0 +1,8 @@
+{% for a in arr %}
+<ul>
+    {% for b in arr %}
+    {% set ab = a * b %}
+    <li>{{a}} * {{b}} = {{ab}}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
